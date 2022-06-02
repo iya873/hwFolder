@@ -15,6 +15,10 @@ app.get('/', (req, res) => {
 app.get('/pokemon', (req, res) => {
     res.render('Index', {pokemon: pokeData})
 })
+
+app.get('/pokemon/:id', (req, res) => {
+    res.send(req.params.id)
+})
 app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 })
