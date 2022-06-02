@@ -1,5 +1,5 @@
 const React = require('react')
-const pokemon = require('../pokemon')
+const pokemon = require('../models/pokemon')
 const body = {
     background: 'yellow'
 }
@@ -23,10 +23,10 @@ class Index extends React.Component {
                         <img style={logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png'></img>
                     </header>
                     <div>
-                        {pokemon.map((pokemon, props) => {
+                        {pokemon.map((pokemon, i) => {
                             return (
                                 <ul>
-                                <li>{pokemon.name.toUpperCase()}</li>
+                                    <a href={`/pokemon/${i}`}> <li>{pokemon.name.toUpperCase()}</li></a>
                                 </ul>
                                 )
                             })}
