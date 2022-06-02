@@ -1,5 +1,5 @@
 const React = require('react')
-const pokemon = require('../models/pokemon')
+const pokemon = require('../pokemon')
 const body = {
     background: 'yellow'
 }
