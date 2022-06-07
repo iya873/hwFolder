@@ -1,0 +1,107 @@
+
+
+body{
+    background-image: url('./images/custombg.png');
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+.container{
+    /* border: 1px solid red; */
+    color: whitesmoke;
+    /* display: flex;
+    flex-flow: column wrap; */
+}
+.wrapper{
+    position: relative;
+    bottom: 25px;
+    height: 620px;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    background: linear-gradient(145deg, #7F0099, #B30059);
+    opacity: 0.75;
+    /* border: 1px solid yellow; */
+}
+h1{
+    /* border: 1px solid pink; */
+    /* margin-left: 15px; */
+    font-size: 40px;
+}
+
+.miniSection,
+.pWrap,
+.mainDiv{
+    background: linear-gradient( 5deg, #494F56, #550066);
+    opacity: 1;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.section1{
+    border: 1px solid purple;
+    width: 25%;
+    height: 620px;
+    position: absolute;
+    /* background: linear-gradient(45deg, #7F0099, #B30059) */
+}
+
+.pWrap{
+    /* border: 1px solid white; */
+    position: relative;
+    top: 20%;
+    display: grid;
+    justify-content: space-between;
+}
+.pWrap :hover{
+    /* border: 1px solid white; */
+    position: relative;
+    top: 20%;
+    display: grid;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+.columnWrap{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 65.5vw;
+    height: 35vh;
+    margin-left: auto;
+    margin-right: 2.5%;
+}
+.columnWrap h2{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.miniSection{
+    /* border: 1px solid green; */
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 22px;
+}
+.mainDiv {
+    /* border: 1px solid black; */
+    width: 65vw;
+    height: 45vh;
+    margin-left: auto;
+    margin-right: 5px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0px;
+    right: 2%;
+    border-radius: 22px
+}
+
+.mainDiv h2{
+    font-size: 12px;
+    margin: 15px;
+}
+.innerDiv{
+    border: 1px solid orange;
+    height: 60%;
+    width: 80%;
+    margin-left: 10%;
+    background-image: url('./images/graph-3.png');
+    background-position: center;
+    background-size: contain;
+}
